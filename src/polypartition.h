@@ -118,7 +118,11 @@ class TPPLPoly {
         TPPLPoint& operator[] (int i) {
             return points[i];
         }
-        
+
+        const TPPLPoint& operator[] (int i) const {
+            return points[i];
+        }
+      
         //clears the polygon points
         void Clear();
         
